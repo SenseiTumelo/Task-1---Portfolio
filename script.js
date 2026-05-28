@@ -1,3 +1,31 @@
+// Page Loader
+window.addEventListener('load', function() {
+    const pageLoader = document.querySelector('.page-loader');
+    if (pageLoader) {
+        setTimeout(() => {
+            pageLoader.style.animation = 'slideOut 1.5s ease-in-out forwards';
+        }, 500);
+    }
+});
+
+// Animated Cursor
+const cursor = document.querySelector('.cursor');
+
+if (cursor) {
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    document.addEventListener('mouseenter', () => {
+        cursor.style.opacity = '1';
+    });
+
+    document.addEventListener('mouseleave', () => {
+        cursor.style.opacity = '0';
+    });
+}
+
 // Hamburger Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
