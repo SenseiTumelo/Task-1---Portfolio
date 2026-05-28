@@ -317,7 +317,7 @@ section img:hover {
 article {
     background: #d5e1c8;
     padding: clamp(3rem, 5%, 3rem) clamp(3rem, 4%, 2rem);
-    margin: clamp(1rem, 3%, 2rem);
+    margin: clamp(1rem, 3%, 5rem);
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(254, 127, 45, 0.25);
     display: flex;
@@ -358,6 +358,7 @@ article img {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
+    border: solid 15px  #6996b3;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -961,4 +962,3 @@ footer iframe {
         font-size: 0.8rem;
     }
 }
-

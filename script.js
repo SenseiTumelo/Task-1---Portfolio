@@ -1,3 +1,6 @@
+
+
+
 // Page Loader
 window.addEventListener('load', function() {
     const pageLoader = document.querySelector('.page-loader');
