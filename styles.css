@@ -111,7 +111,7 @@ article{
 
 #profile-pic img:hover{
     transform: scale(1.05) rotate(360deg);
-    transition: transform 1s ease-in-out;
+    transition: transform 3s ease-in-out;
     border: 10px dotted #f6fa89;
 }
 
@@ -154,4 +154,17 @@ footer .social-media li a img{
 
 footer div {
     padding: 10px;
+}
+
+
+.about-container{
+    display: grid;  
+    padding: 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.about-container .about-text{
+    padding: 20px;  
+    background-color: #f6fa89;
 }
