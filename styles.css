@@ -110,8 +110,8 @@ article{
 }
 
 #profile-pic img:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05) rotate(360deg);
+    transition: transform 1s ease-in-out;
     border: 10px dotted #f6fa89;
 }
 
