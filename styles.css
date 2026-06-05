@@ -156,15 +156,122 @@ footer div {
     padding: 10px;
 }
 
-
+footer p{
+    font-size: 1.2em;
+    color: black;
+    padding-top: 30px;
+}
 .about-container{
     display: grid;  
     padding: 100px 100px;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    
+    
 }
 
 .about-container .about-text{
     padding: 20px;  
     background-color: #f6fa89;
+    border-radius: 1em;
+}
+
+.about-text p{
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding-bottom: 40px;
+
+}
+
+.about-container .social-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-container .social-links a img{
+     width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.about-details{
+    padding: 20px;
+    background-color: #96fa89;
+    border-radius: 1em;
+}
+
+.about-details ul{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    
+}
+
+.about-details h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-details ul li{
+    line-height: 1.5;
+    padding-bottom: 20px;
+    list-style: none;
+    
+    border-radius: 1em ;
+}
+
+.experience-item{
+    background-color: #f6fa89;
+    padding: 20px;
+    border-radius: 1em;
+    margin-bottom: 10px;
+}
+
+.skill{
+    position: relative;
+    cursor: pointer;
+}
+
+.skill::after{
+content: '';
+  position: absolute;
+  background-image: var(--skill-image);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  /* Position it above/beside the item */
+  left: 250px;
+  top: 0;
+  margin-left: 10px;
+}
+
+.skill:hover::after{
+    opacity: 1;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 100px;
+    gap: 50px;
+}
+
+.contact-container .contact-info{
+    background-color: #f6fa89;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #96fa89;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
