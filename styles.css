@@ -156,7 +156,11 @@ footer div {
     padding: 10px;
 }
 
-
+footer p{
+    font-size: 1.2em;
+    color: black;
+    padding-top: 30px;
+}
 .about-container{
     display: grid;  
     padding: 100px 100px;
@@ -248,4 +252,26 @@ content: '';
 
 .skill:hover::after{
     opacity: 1;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 100px;
+    gap: 50px;
+}
+
+.contact-container .contact-info{
+    background-color: #f6fa89;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #96fa89;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
